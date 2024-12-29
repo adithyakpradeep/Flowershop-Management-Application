@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Flora</title>
+
+	<style type="text/css">
+		body {
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;
+    		height: 100vh;
+    		margin: 0;
+    		background-image: url("D:/Luminar/Project/image/flower8.jpg"); /* Update to correct path */
+    		background-size: cover;
+    		background-repeat: no-repeat;
+    		background-attachment: fixed;
+		}
+
+	/* Container styling */
+	.container {
+    	background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    	backdrop-filter: blur(5px); /* Adds blur to the background behind */
+    	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    	border-radius: 8px;
+    	padding: 20px 40px;
+    	width: 350px;
+    	text-align: center;
+	}
+
+	/* Title Styling */
+	h1 {
+    	font-family: Arial, sans-serif;
+    	font-size: 24px;
+    	color: #333;
+    	margin-bottom: 20px;
+	}
+
+	/* Form Group Styling */
+	.form-group {
+    	margin-bottom: 15px;
+    	text-align: left;
+	}
+
+	/* Label Styling */
+	label {
+    	font-size: 14px;
+    	font-family: Arial, sans-serif;
+    	color: #555;
+    	display: block;
+    	margin-bottom: 5px;
+	}
+
+	/* Input and Select Styling */
+	input[type="text"], input[type="password"], select {
+    	width: 100%;
+    	padding: 10px;
+    	margin-bottom: 10px;
+    	border: 1px solid #ccc;
+    	border-radius: 4px;
+    	font-size: 14px;
+    	box-sizing: border-box;
+	}
+
+	/* Button Styling */
+	input[type="submit"] {
+    	width: 100%;
+    	padding: 10px;
+    	background-color: #ee8a08;
+    	color: white;
+    	border: none;
+    	border-radius: 4px;
+    	font-size: 16px;
+    	cursor: pointer;
+    	font-weight: bold;
+	}
+
+	/* Button Hover Effect */
+	input[type="submit"]:hover {
+    	background-color: #ff5a01f0;
+	}
+	
+	</style>
+
+	<script>
+		
+			function valForm(){
+				
+					if(document.signin.username.value==""){
+					
+						alert("Enter username");
+						document.signin.username.focus();
+						return false;
+					}
+					
+					if(document.signin.password.value==""){
+						alert("Enter the password");
+						document.signin.password.focus();
+						return false;
+					}
+			
+				//document.signin.submit();
+				return true;
+			}
+		
+		
+		</script>
+	
+	
+</head>
+<body>
+	
+	<div class = "container">
+		<div class = "box">
+		<h1 align = "center"> SignIn </h1>
+		<form name = "signin" method= "post" action="login" >
+		
+			<label>Username</label>&nbsp;&nbsp;
+			<input type = "text" name= "username" id= "username" placeholder = "Enter username"/><br><br>
+		
+			<label>password</label>&nbsp;&nbsp;
+			<input type = "password" name = "password" id= "password" placeholder="enter password"/><br><br>
+			
+						
+			<input type = "submit" value = "Signin" onclick="return valForm()"/>
+			
+		</form>
+		</div>
+	</div>
+	
+	</body>
+
+</html>
+

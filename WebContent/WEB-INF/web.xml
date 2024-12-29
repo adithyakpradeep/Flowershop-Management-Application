@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>FlowerManagementApp</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>com.flora.SignInServlet</servlet-class>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>signin</servlet-name>
+		<servlet-class>com.flora.SignUpServlet</servlet-class>
+
+	</servlet>
+
+	<servlet-mapping>
+
+		<servlet-name>signin</servlet-name>
+		<url-pattern>/signin</url-pattern>
+
+
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>Adminlanding</servlet-name>
+		<servlet-class>com.flora.AdminLandingServlet</servlet-class>
+
+	</servlet>
+
+	<servlet-mapping>
+
+		<servlet-name>Adminlanding</servlet-name>
+		<url-pattern>/Adminlanding</url-pattern>
+
+
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Managerlanding</servlet-name>
+		<servlet-class>com.flora.ManagerLandingServlet</servlet-class>
+
+	</servlet>
+
+	<servlet-mapping>
+
+		<servlet-name>Managerlanding</servlet-name>
+		<url-pattern>/Managerlanding</url-pattern>
+
+
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ManagerUser</servlet-name>
+		<servlet-class>com.flora.ManagerUserServlet</servlet-class>
+
+	</servlet>
+
+	<servlet-mapping>
+
+		<servlet-name>ManagerUser</servlet-name>
+		<url-pattern>/ManagerUser</url-pattern>
+
+
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ManagerUserDisplay</servlet-name>
+		<servlet-class>com.flora.ManagerUserDisplayServlet</servlet-class>
+
+	</servlet>
+
+	<servlet-mapping>
+
+		<servlet-name>ManagerUserDisplay</servlet-name>
+		<url-pattern>/ManagerUserDisplay</url-pattern>
+
+
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ManagerUserEdit</servlet-name>
+		<servlet-class>com.flora.ManagerUserEditServlet</servlet-class>
+
+	</servlet>
+
+	<servlet-mapping>
+
+		<servlet-name>ManagerUserEdit</servlet-name>
+		<url-pattern>/ManagerUserEdit</url-pattern>
+
+
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>ManagerUserUpdate</servlet-name>
+		<servlet-class>com.flora.ManagerUserUpdateServlet</servlet-class>
+
+	</servlet>
+
+	<servlet-mapping>
+
+		<servlet-name>ManagerUserUpdate</servlet-name>
+		<url-pattern>/ManagerUserUpdate</url-pattern>
+
+
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ManagerVendor</servlet-name>
+		<servlet-class>com.flora.ManagerVendorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerVendor</servlet-name>
+		<url-pattern>/ManagerVendor</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ManagerVendorDisplay</servlet-name>
+		<servlet-class>com.flora.ManagerVendorDisplayServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerVendorDisplay</servlet-name>
+		<url-pattern>/ManagerVendorDisplay</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ManagerVendorUpdate</servlet-name>
+		<servlet-class>com.flora.ManagerVendorUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerVendorUpdate</servlet-name>
+		<url-pattern>/ManagerVendorUpdate</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>ManagerVendorEdit</servlet-name>
+		<servlet-class>com.flora.ManagerVendorEditServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerVendorEdit</servlet-name>
+		<url-pattern>/ManagerVendorEdit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ManagerItem</servlet-name>
+		<servlet-class>com.flora.ManagerItemServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerItem</servlet-name>
+		<url-pattern>/ManagerItem</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ManagerItemDisplay</servlet-name>
+		<servlet-class>com.flora.ManagerItemDisplayServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerItemDisplay</servlet-name>
+		<url-pattern>/ManagerItemDisplay</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ManagerItemEdit</servlet-name>
+		<servlet-class>com.flora.ManagerItemEditServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerItemEdit</servlet-name>
+		<url-pattern>/ManagerItemEdit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ManagerItemUpdate</servlet-name>
+		<servlet-class>com.flora.ManagerItemUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerItemUpdate</servlet-name>
+		<url-pattern>/ManagerItemUpdate</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ManagerItemPrice</servlet-name>
+		<servlet-class>com.flora.ManagerItemPriceServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerItemPrice</servlet-name>
+		<url-pattern>/ManagerItemPrice</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ManagerItemPriceDisplay</servlet-name>
+		<servlet-class>com.flora.ManagerItemPriceDisplayServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerItemPriceDisplay</servlet-name>
+		<url-pattern>/ManagerItemPriceDisplay</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ManagerItemPriceEdit</servlet-name>
+		<servlet-class>com.flora.ManagerItemPriceEditServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerItemPriceEdit</servlet-name>
+		<url-pattern>/ManagerItemPriceEdit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ManagerItemPriceUpdate</servlet-name>
+		<servlet-class>com.flora.ManagerItemPriceUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerItemPriceUpdate</servlet-name>
+		<url-pattern>/ManagerItemPriceUpdate</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ManagerCustomer</servlet-name>
+		<servlet-class>com.flora.ManagerCustomerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerCustomer</servlet-name>
+		<url-pattern>/ManagerCustomer</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ManagerCustomerDisplay</servlet-name>
+		<servlet-class>com.flora.ManagerCustomerDisplayServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerCustomerDisplay</servlet-name>
+		<url-pattern>/ManagerCustomerDisplay</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ManagerCustomerEdit</servlet-name>
+		<servlet-class>com.flora.ManagerCustomerEditServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerCustomerEdit</servlet-name>
+		<url-pattern>/ManagerCustomerEdit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ManagerCustomerUpdate</servlet-name>
+		<servlet-class>com.flora.ManagerCustomerUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerCustomerUpdate</servlet-name>
+		<url-pattern>/ManagerCustomerUpdate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ManagerStock</servlet-name>
+		<servlet-class>com.flora.ManagerStockServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerStock</servlet-name>
+		<url-pattern>/ManagerStock</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ManagerStockDisplay</servlet-name>
+		<servlet-class>com.flora.ManagerStockDisplayServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerStockDisplay</servlet-name>
+		<url-pattern>/ManagerStockDisplay</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ManagerStockEdit</servlet-name>
+		<servlet-class>com.flora.ManagerStockEditServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerStockEdit</servlet-name>
+		<url-pattern>/ManagerStockEdit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ManagerStockUpdate</servlet-name>
+		<servlet-class>com.flora.ManagerStockUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerStockUpdate</servlet-name>
+		<url-pattern>/ManagerStockUpdate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ManagerOrder</servlet-name>
+		<servlet-class>com.flora.ManagerOrderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerOrder</servlet-name>
+		<url-pattern>/ManagerOrder</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ManagerOrderDisplay</servlet-name>
+		<servlet-class>com.flora.ManagerOrderDisplayServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerOrderDisplay</servlet-name>
+		<url-pattern>/ManagerOrderDisplay</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ManagerOrderEdit</servlet-name>
+		<servlet-class>com.flora.ManagerOrderEditServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerOrderEdit</servlet-name>
+		<url-pattern>/ManagerOrderEdit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ManagerOrderUpdate</servlet-name>
+		<servlet-class>com.flora.ManagerOrderUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerOrderUpdate</servlet-name>
+		<url-pattern>/ManagerOrderUpdate</url-pattern>
+	</servlet-mapping>
+	
+
+	<servlet>
+		<servlet-name>AdminUser</servlet-name>
+		<servlet-class>com.flora.AdminUserServlet</servlet-class>
+
+	</servlet>
+
+	<servlet-mapping>
+
+		<servlet-name>AdminUser</servlet-name>
+		<url-pattern>/AdminUser</url-pattern>
+
+
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminUserDisplay</servlet-name>
+		<servlet-class>com.flora.AdminUserDisplayServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminUserDisplay</servlet-name>
+		<url-pattern>/AdminUserDisplay</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>AdminUserEdit</servlet-name>
+		<servlet-class>com.flora.AdminUserEditServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminUserEdit</servlet-name>
+		<url-pattern>/AdminUserEdit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminUserUpdateServlet</servlet-name>
+		<servlet-class>com.flora.AdminUserUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminUserUpdateServlet</servlet-name>
+		<url-pattern>/AdminUserUpdate</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminUserDelete</servlet-name>
+		<servlet-class>com.flora.AdminUserDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminUserDelete</servlet-name>
+		<url-pattern>/AdminUserDelete</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminVendor</servlet-name>
+		<servlet-class>com.flora.AdminVendorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminVendor</servlet-name>
+		<url-pattern>/AdminVendor</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminVendorDisplay</servlet-name>
+		<servlet-class>com.flora.AdminVendorDisplayServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminVendorDisplay</servlet-name>
+		<url-pattern>/AdminVendorDisplay</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>AdminVendorEdit</servlet-name>
+		<servlet-class>com.flora.VendorEditServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminVendorEdit</servlet-name>
+		<url-pattern>/AdminVendorEdit</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>VendorUpdate</servlet-name>
+		<servlet-class>com.flora.VendorUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VendorUpdate</servlet-name>
+		<url-pattern>/VendorUpdate</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminVendorDelete</servlet-name>
+		<servlet-class>com.flora.VendorDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminVendorDelete</servlet-name>
+		<url-pattern>/AdminVendorDelete</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminItem</servlet-name>
+		<servlet-class>com.flora.AdminItemServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminItem</servlet-name>
+		<url-pattern>/AdminItem</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminItemDisplay</servlet-name>
+		<servlet-class>com.flora.AdminItemDisplayServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminItemDisplay</servlet-name>
+		<url-pattern>/AdminItemDisplay</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>AdminItemEdit</servlet-name>
+		<servlet-class>com.flora.AdminItemEditServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminItemEdit</servlet-name>
+		<url-pattern>/AdminItemEdit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminItemUpdate</servlet-name>
+		<servlet-class>com.flora.AdminItemUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminItemUpdate</servlet-name>
+		<url-pattern>/AdminItemUpdate</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminItemDelete</servlet-name>
+		<servlet-class>com.flora.AdminItemDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminItemDelete</servlet-name>
+		<url-pattern>/AdminItemDelete</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>AdminItemPrice</servlet-name>
+		<servlet-class>com.flora.AdminItemPriceServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminItemPrice</servlet-name>
+		<url-pattern>/AdminItemPrice</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>AdminItemPriceDisplay</servlet-name>
+		<servlet-class>com.flora.AdminItemPriceDisplayServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminItemPriceDisplay</servlet-name>
+		<url-pattern>/AdminItemPriceDisplay</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<servlet>
+		<servlet-name>AdminItemPriceEdit</servlet-name>
+		<servlet-class>com.flora.AdminItemPriceEditServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminItemPriceEdit</servlet-name>
+		<url-pattern>/AdminItemPriceEdit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminItemPriceUpdateServlet</servlet-name>
+		<servlet-class>com.flora.AdminItemPriceUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminItemPriceUpdateServlet</servlet-name>
+		<url-pattern>/AdminItemPriceUpdateServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminItemPriceDelete</servlet-name>
+		<servlet-class>com.flora.AdminItemPriceDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminItemPriceDelete</servlet-name>
+		<url-pattern>/AdminItemPriceDelete</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminCustomer</servlet-name>
+		<servlet-class>com.flora.AdminCustomerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminCustomer</servlet-name>
+		<url-pattern>/AdminCustomer</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminCustomerDisplay</servlet-name>
+		<servlet-class>com.flora.AdminCustomerDisplayServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminCustomerDisplay</servlet-name>
+		<url-pattern>/AdminCustomerDisplay</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminCustomerEdit</servlet-name>
+		<servlet-class>com.flora.AdminCustomerEditServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminCustomerEdit</servlet-name>
+		<url-pattern>/AdminCustomerEdit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminCustomerUpdate</servlet-name>
+		<servlet-class>com.flora.AdminCustomerUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminCustomerUpdate</servlet-name>
+		<url-pattern>/AdminCustomerUpdate</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>AdminCustomerDelete</servlet-name>
+		<servlet-class>com.flora.AdminCustomerDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminCustomerDelete</servlet-name>
+		<url-pattern>/AdminCustomerDelete</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>AdminStock</servlet-name>
+		<servlet-class>com.flora.AdminStockServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminStock</servlet-name>
+		<url-pattern>/AdminStock</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminStockDisplay</servlet-name>
+		<servlet-class>com.flora.AdminStockDisplayServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminStockDisplay</servlet-name>
+		<url-pattern>/AdminStockDisplay</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>AdminStockEdit</servlet-name>
+		<servlet-class>com.flora.AdminStockEditServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminStockEdit</servlet-name>
+		<url-pattern>/AdminStockEdit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminStockUpdate</servlet-name>
+		<servlet-class>com.flora.AdminStockUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminStockUpdate</servlet-name>
+		<url-pattern>/AdminStockUpdate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminStockDelete</servlet-name>
+		<servlet-class>com.flora.AdminStockDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminStockDelete</servlet-name>
+		<url-pattern>/AdminStockDelete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminOrder</servlet-name>
+		<servlet-class>com.flora.AdminOrderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminOrder</servlet-name>
+		<url-pattern>/AdminOrder</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminOrderDisplay</servlet-name>
+		<servlet-class>com.flora.AdminOrderDisplayServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminOrderDisplay</servlet-name>
+		<url-pattern>/AdminOrderDisplay</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminOrderEdit</servlet-name>
+		<servlet-class>com.flora.AdminOrderEditServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminOrderEdit</servlet-name>
+		<url-pattern>/AdminOrderEdit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminOrderUpdate</servlet-name>
+		<servlet-class>com.flora.AdminOrderUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminOrderUpdate</servlet-name>
+		<url-pattern>/AdminOrderUpdate</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminOrderDelete</servlet-name>
+		<servlet-class>com.flora.AdminOrderDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminOrderDelete</servlet-name>
+		<url-pattern>/AdminOrderDelete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Billing</servlet-name>
+		<servlet-class>com.flora.BillingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Billing</servlet-name>
+		<url-pattern>/Billing</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ShowBilling</servlet-name>
+		<servlet-class>com.flora.ShowBillingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowBilling</servlet-name>
+		<url-pattern>/ShowBilling</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Report</servlet-name>
+		<servlet-class>com.flora.ReportServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Report</servlet-name>
+		<url-pattern>/Report</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>com.flora.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+
+
+
+</web-app>
